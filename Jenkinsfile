@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build project') {
             steps {
-                sh 'dotnet build'
+                bat 'dotnet build'
             }
         }
         stage('Execute tests') {
             steps {
-                sh 'dotnet test'
+                bat 'dotnet test'
             }
         }
     }
